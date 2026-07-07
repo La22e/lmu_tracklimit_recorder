@@ -24,7 +24,7 @@ Exports the averaged boundary points as CSV files.
 
 - **Drive in the center of the track**: the tool computes the center path from your `mPathLateral` offset. Driving center means `path_lateral ≈ 0`, giving the cleanest center-line calculation for the game's `mTrackEdge` to derive both boundaries.
 - **Enable the pit limiter and keep a consistent speed**: uniform speed produces even point density around the whole lap. Slow sections cluster points; fast sections leave gaps.
-- **Complete at least 2–3 full laps**: more laps give the averaging pass more data to smooth out noise and produce accurate boundaries.
+- **Drive 1 lap starting from a straight**: driving more laps can create spikes in the tracklimit lines. (Less clean up)
 - **Drive the whole track layout**: ensure you cover every corner and straight to get complete boundary coverage.
 
 ## Boundary Editor
