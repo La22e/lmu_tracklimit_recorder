@@ -3,7 +3,7 @@ Tool to map track boundaries in Le Mans Ultimate. Records boundary points from s
 
 ## Requirements
 
-- **Le Mans Ultimate** — running and on-track (shared memory must be available)
+- **Le Mans Ultimate** — running and on-track
 - **Python >= 3.14**
 - **pyLMUSharedMemory** submodule (see Installation)
 
@@ -29,7 +29,7 @@ pip install -e .
 
 ### 1. Record
 
-Get on track, drive in the center at a consistent speed (pit limiter helps). Press **Ctrl+C** to stop — laps are averaged automatically.
+Get on track, drive in the center at a consistent speed (pit limiter helps). Press **Ctrl+C** to stop recording.
 
 ```bash
 py src\track_limit_recorder\main.py
@@ -39,7 +39,7 @@ See [Recording README](src/track_limit_recorder/README.md) for tips on best resu
 
 ### 2. Edit
 
-Visually inspect, smooth, optimize (RDP simplification), and tweak points. Supports undo/redo.
+Visually inspect, smooth, optimize, and tweak points.
 
 ```bash
 py src\boundary_editor\main.py
